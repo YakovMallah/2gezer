@@ -1,1 +1,0 @@
-# 2gezer - a collaborative apps platform

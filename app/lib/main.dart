@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'core/navigation/app_router.dart';
-import 'core/auth/auth_service.dart';
+import 'package:two_gezer/screens/app_router.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  AuthService.instance.restoreSession();
   runApp(const MyApp());
 }
 
@@ -14,8 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Group Manager (Mock)',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      title: '2gezer',
+      theme: ThemeData(primarySwatch: Colors.orange),
       routerConfig: AppRouter.create(),
     );
   }
